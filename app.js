@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-app.listen(process.env.port || 8000, () => {
+app.listen(process.env.PORT || 8000, () => {
     console.log('sever is running at 8000...');
 })
 
